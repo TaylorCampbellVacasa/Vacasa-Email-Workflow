@@ -1,72 +1,37 @@
-<row class="padding-b mobile-padding">
+<container>
+	<row>
+		<column class="gutter">
 
-	<column class="four-box" large="3" small="6">
-		<img src="" alt="">
-		<!-- raw-helper -->
+			<container>
+				<row>
+					{{#each four_box}}
+						<column class="four-box" large="3" small="6">
+							<!-- raw-helper -->
+							<a href="{{ url }}{{ utm_add }}" target="_blank">
+								<img infer="retina" class="padding-b-small four-b-image" width="122"
+									src="{{ image }}?w=568&ar=1:1&fit=crop&crop=entropy,edges"
+									alt="Click to view and book {{ name }} on Vacasa.com" />
+								<p class="four-b-name">
+									{{ name }}
+								</p>
+								<p class="four-b-description">
+									{{ desc }}
+								</p>
+							</a>
+							<!-- /raw-helper -->
+						</column>
+					{{/each}}
+				</row>
+			</container>
 
-		<a href="{{thing_1_url}}" target="_blank" class="unit-card-link">
-			<img infer="retina" class="unit-card-image" src="{{unit_1_image}}?w=568&ar=1:1&fit=crop&crop=entropy,edges"
-				alt="{{unit_1_name}}" width="134" style="display: block; max-width: 100%;" />
-			<h3 class="four-box-name">
-				Thing name
-			</h3>
-			<p class="four-box-description">
-				Thing description
-			</p>
-		</a>
+		</column>
+	</row>
+</container>
 
-		<!-- /raw-helper -->
-	</column>
-	<column class="four-box" large="3" small="6">
-		<img src="" alt="">
-		<!-- raw-helper -->
-
-		<a href="{{thing_1_url}}" target="_blank" class="unit-card-link">
-			<img infer="retina" class="unit-card-image" src="{{unit_1_image}}?w=568&ar=1:1&fit=crop&crop=entropy,edges"
-				alt="{{unit_1_name}}" width="134" style="display: block; max-width: 100%;" />
-			<h3 class="four-box-name">
-				Thing name
-			</h3>
-			<p class="four-box-description">
-				Thing description
-			</p>
-		</a>
-
-		<!-- /raw-helper -->
-	</column>
-	<column class="four-box" large="3" small="6">
-		<img src="" alt="">
-		<!-- raw-helper -->
-
-		<a href="{{thing_1_url}}" target="_blank" class="unit-card-link">
-			<img infer="retina" class="unit-card-image" src="{{unit_1_image}}?w=568&ar=1:1&fit=crop&crop=entropy,edges"
-				alt="{{unit_1_name}}" width="134" style="display: block; max-width: 100%;" />
-			<h3 class="four-box-name">
-				Thing name
-			</h3>
-			<p class="four-box-description">
-				Thing description
-			</p>
-		</a>
-
-		<!-- /raw-helper -->
-	</column>
-	<column class="four-box" large="3" small="6">
-		<img src="" alt="">
-		<!-- raw-helper -->
-
-		<a href="{{thing_1_url}}" target="_blank" class="unit-card-link">
-			<img infer="retina" class="unit-card-image" src="{{unit_1_image}}?w=568&ar=1:1&fit=crop&crop=entropy,edges"
-				alt="{{unit_1_name}}" width="134" style="display: block; max-width: 100%;" />
-			<h3 class="four-box-name">
-				Thing name
-			</h3>
-			<p class="four-box-description">
-				Thing description
-			</p>
-		</a>
-
-		<!-- /raw-helper -->
-	</column>
-
-</row>
+<container>
+	<row>
+		<column class="padding-b">
+			<!--pad-col-->
+		</column>
+	</row>
+</container>

@@ -1,11 +1,10 @@
-.vacasa-banner {
-  padding: 24px 24px 24px 24px;
+.vacasa-banner-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 h3.vacasa-banner {
-  margin-top: 0;
-  height: auto;
-  padding: 0;
+  margin: 0;
   color: #2c3439;
   font-size: 28px;
   font-family: "wigrum-medium", Helvetica, Arial, sans-serif;
@@ -14,8 +13,9 @@ h3.vacasa-banner {
   line-height: 36px;
 }
 
-.vacasa-banner span {
-  max-width: 430px;
+p.vacasa-banner {
+  max-width: 500px;
+  margin: 0;
   height: auto;
   color: #000000;
   font-size: 16px;
@@ -24,25 +24,22 @@ h3.vacasa-banner {
   line-height: 26px;
 }
 
-.vacasa-banner a {
+a.vacasa-banner {
   color: #003349;
 }
 
-.vacasa-banner-logo {
-  margin-top: 32px;
-}
-
 .unsubscribe-preferences-container {
-  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .social-icon {
   display: inline;
 }
 
-.social-icon.margin-right {
+.social-icon.padding-right {
   display: inline;
-  margin-right: 36px;
+  padding-right: 36px;
 }
 
 p.unsubscribe-preferences-links {
@@ -50,7 +47,8 @@ p.unsubscribe-preferences-links {
   font-size: 14px;
   font-family: "Nunito Sans", Arial, sans-serif;
   line-height: 20px;
-  margin: 16px auto;
+  padding-bottom: 8px;
+  margin: 0;
 }
 
 p.unsubscribe-preferences-links a.unsub-link {

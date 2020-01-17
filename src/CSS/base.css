@@ -64,6 +64,18 @@ a {
   margin-bottom: 8px;
 }
 
+.padding-t-large {
+  padding-top: 24px;
+}
+
+.padding-t {
+  padding-top: 16px;
+}
+
+.padding-t-small {
+  padding-top: 8px;
+}
+
 .padding-b-large {
   padding-bottom: 24px;
 }

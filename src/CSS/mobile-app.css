@@ -16,6 +16,14 @@
     letter-spacing: -0.2px !important;
     margin-bottom: 8px !important;
   }
+
+  .mobile-app-right {
+    padding: 0 !important;
+  }
+
+  .mobile-app-left {
+    padding-right: 24px !important;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -24,7 +32,16 @@
   }
 }
 
-.mobile-app-container {
+.mobile-app-left {
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+
+.mobile-app-right {
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 16px;
   padding-bottom: 24px;
 }
 
@@ -40,10 +57,8 @@
 }
 
 .mobile-app {
-  text-align: left !important;
   word-wrap: normal;
   -ms-word-wrap: normal;
-  font-size: 12px;
   color: #ffffff;
 }
 
@@ -103,7 +118,6 @@
 
 .full-width-app-image img {
   margin: 0 !important;
-  margin-left: auto !important;
   padding: 0 !important;
 }
 

@@ -1,25 +1,29 @@
-<row class="reservation-details margin-b">
-	<column class="gutter text-left">
-		<h2 class="reservation-heading">Your Reservation #{{ reservation_id }}</h2>
-
-		<a href="{{ url }}" target="_blank">
-			<span class="reservation-unit-name">{{ name }}</span>
-			<p class="reservation-unit-address">
-				<!--raw-helper-->
-				{{ address_line_one }}<br />
-				{{ address_line_two }}
-				<!--/raw-helper-->
-			</p>
-		</a>
-	</column>
-</row>
-
-
-<!--[if mso]>
-					<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" role="presentation" class="table" style="padding: 0;">
-						<tr width="600" height="16" bgcolor="#ffffff" class="tr"> </tr>
-					</table>
-<![endif]-->
+<container>
+	<row>
+		<column class="gutter padding-b text-left">
+			<h2 class="reservation-heading">Your Reservation #{{ reservation_id }}</h2>
+		</column>
+	</row>
+	<row>
+		<column class="gutter padding-b-small text-left">
+			<a href="{{ url }}" target="_blank">
+				<span class="reservation-unit-name">{{ name }}</span>
+			</a>
+		</column>
+	</row>
+	<row>
+		<column class="gutter padding-b-small text-left">
+			<a href="{{ url }}" target="_blank">
+				<p class="reservation-unit-address">
+					<!--raw-helper-->
+					{{ address_line_one }}<br />
+					{{ address_line_two }}
+					<!--/raw-helper-->
+				</p>
+			</a>
+		</column>
+	</row>
+</container>
 <hr style="border-top:1px solid #CCD6DB; width: 100%; max-width:552px; height:16px;" />
 
 <row class="reservation-details margin-b">

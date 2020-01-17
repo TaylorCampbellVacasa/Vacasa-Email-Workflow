@@ -33,10 +33,10 @@
   clear: both;
   display: block;
   margin-bottom: 8px !important;
-  max-width: 284px;
   outline: 0;
   text-decoration: none;
   width: auto;
+  max-width: 100%;
 }
 
 .unit-card-name {
