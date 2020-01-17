@@ -59,6 +59,15 @@ function handlebars(cb) {
       helpers: {
         "raw-helper": function(options) {
           return options.fn();
+        },
+        each: function(context, options) {
+          var ret = "";
+
+          for (var i = 0, j = context.length; i < j; i++) {
+            ret = ret + options.fn(context[i]);
+          }
+
+          return ret;
         }
       }
     };
@@ -89,7 +98,11 @@ function watch() {
 function minify() {
   return gulp
     .src("dist/index.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true
+      })
+    )
     .pipe(gulp.dest("dist/"));
 }
 
