@@ -24,7 +24,7 @@ A powerful template engine allowing the dynamic substitution of data inside of v
 - **[HTML Minify](https://www.npmjs.com/package/gulp-htmlmin)**
 - **[Gulp String Replace](https://www.npmjs.com/package/gulp-string-replace)**
 
-## Workflow things to note
+## Important to note
 
 ### How to get started
 
