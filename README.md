@@ -46,7 +46,7 @@ A powerful template engine allowing the dynamic substitution of data inside of v
 
 ### How to selectively render Handlebars expressions
 
-- Surround elements with **`raw-helper`** blocks to escape HEML interpolation
+- Surround elements with **`raw-helper`** blocks to escape interpolation
    ```handlebars
    {{{{raw-helper}}}} 
    <div>
