@@ -2,12 +2,16 @@
 
 A HTML templating workflow for building beautiful, dynamic emails that render in every inbox.
 
+## What's inside?
+
+### HandlebarsJS
+A powerful templating engine alowing the dynamic substitution of data inside of variable **`{{ expressions }}`**
 
 
-Major Packages:
+[Handlebars](https://www.npmjs.com/package/gulp-compile-handlebars)
 
 - [CSS Inliner](https://www.npmjs.com/package/gulp-style-inject)
-- [Handlebars](https://www.npmjs.com/package/gulp-compile-handlebars)
+- 
 - [HEML](https://heml.io/)
 - [HTML Minify](https://www.npmjs.com/package/gulp-htmlmin)
 - [Gulp String Replace](https://www.npmjs.com/package/gulp-string-replace)
