@@ -1,8 +1,10 @@
-# PEAT
+# Vacasa Email Workflow
 
-A HTML templating workflow for use with PEAT App
+A HTML templating workflow for building beautiful, dynamic emails that render in every inbox.
 
-Uses gulp to run the html through:
+
+
+Major Packages:
 
 - [CSS Inliner](https://www.npmjs.com/package/gulp-style-inject)
 - [Handlebars](https://www.npmjs.com/package/gulp-compile-handlebars)
