@@ -4,7 +4,7 @@ A dynamic HTML email workflow for building beautiful emails that render consiste
 
 ## Major Packages
 
-### heml
+### **[heml](https://heml.io/)**
 * Enables simple, semantic code in place of complicated HTML structure
 * Enforced code structure where it matters and full control when you need it
 * Effortless responsive emails means mobile users get content tailored to their screens
@@ -12,12 +12,11 @@ A dynamic HTML email workflow for building beautiful emails that render consiste
 * Error reporting on render, fix issues fast
 * Extensible for the future
 
-**[HEML](https://heml.io/)**
 
-### Handlebars
+
+### **[Handlebars](https://www.npmjs.com/package/gulp-compile-handlebars)**
 A powerful template engine allowing the dynamic substitution of data inside of variable **`{{ expressions }}`**
 
-**[Handlebars](https://www.npmjs.com/package/gulp-compile-handlebars)**
 
 ### Utility Packages
 - **[CSS Inliner](https://www.npmjs.com/package/gulp-style-inject)**
