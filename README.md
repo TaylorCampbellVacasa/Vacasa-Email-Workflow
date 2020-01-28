@@ -11,11 +11,13 @@ A dynamic HTML email workflow for building beautiful emails that render consiste
 * Consistent rendering and better accessibility
 * Error reporting on render, fix issues fast
 * Extensible for the future
-[HEML](https://heml.io/)
+
+**[HEML](https://heml.io/)**
 
 ### Handlebars
 A powerful template engine allowing the dynamic substitution of data inside of variable **`{{ expressions }}`**
-[Handlebars](https://www.npmjs.com/package/gulp-compile-handlebars)
+
+**[Handlebars](https://www.npmjs.com/package/gulp-compile-handlebars)**
 
 ### Utility Packages
 - **[CSS Inliner](https://www.npmjs.com/package/gulp-style-inject)**
