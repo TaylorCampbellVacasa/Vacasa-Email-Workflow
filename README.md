@@ -72,3 +72,7 @@ A powerful template engine allowing the dynamic substitution of data inside of v
   ```handlebars
 	<!-- raw-helper --> ... <!-- /raw-helper -->
 	```
+
+### Escaping special characters in Handlebars expressions
+
+- Handlebars will encode special characters by default **`& < > " ' \``**
