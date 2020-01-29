@@ -75,4 +75,5 @@ A powerful template engine allowing the dynamic substitution of data inside of v
 
 ### Escaping special characters in Handlebars expressions
 
-- Handlebars will encode special characters by default **`& < > " ' \``**
+- As a best practice, any **`{{ expressions }} `** used as for URLs should be **`{{{ triple_wrapped }}}`** in brackets to avoid HTML escaping, which will break some links. 
+   **[Read more here](https://handlebarsjs.com/guide/#html-escaping)**
