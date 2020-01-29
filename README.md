@@ -78,3 +78,6 @@ A powerful template engine allowing the dynamic substitution of data inside of v
 - As a best practice, any **`{{ expressions }} `** used as for URLs should be **`{{{ triple_wrapped_in_brackets }}}`** to avoid HTML escaping, which will break some links and may cause other unexpected behavior.
 
    **[Official documentation](https://handlebarsjs.com/guide/#html-escaping)**
+
+
+## Structure and Styling: best practices
