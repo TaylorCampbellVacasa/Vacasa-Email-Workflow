@@ -1,0 +1,25 @@
+<container class="lead">
+	<row>
+		<column class="text-left padding-b-small mobile-padding-small">
+			<h1>You're headed to {{ city_name }}</h1>
+		</column>
+	</row>
+	<row>
+		<column class="text-left padding-b-large mobile-padding-small">
+			<p class="sub-message">Here's a summary of your reservation.</p>
+		</column>
+	</row>
+</container>
+
+<container class="lead">
+	<row>
+		<column class="text-left padding-b-xtra-large mobile-padding-small">
+			<a href="{{{ url }}}{{{ utm_add }}}" target="_blank">
+
+				<img infer="retina" width="600" src="{{{ image }}}?w=1200&ar=3:1&fit=crop&crop=entropy,edges"
+					alt="Open new page to book {{ name }} on Vacasa.com."></img>
+
+			</a>
+		</column>
+	</row>
+</container>

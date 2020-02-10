@@ -55,7 +55,11 @@ function handlebars(cb) {
   var templateData = JSON.parse(fs.readFileSync("src/data/data.json")),
     options = {
       ignorePartials: true,
-      batch: ["./src/partials"],
+      batch: [
+        "./src/partials",
+        "./src/partials/marketing",
+        "./src/partials/transactional"
+      ],
       helpers: {
         "raw-helper": function(options) {
           return options.fn();

@@ -1,4 +1,5 @@
 {
+  "email_type": "transactional",
   "rndr_template": false,
   "rndr_headline": "A filler headline to be replaced later",
   "rndr_subhead": "A filler sub-headline to be replaced later",
@@ -37,39 +38,14 @@
   "reservation_id": "1FG86HP403",
   "reservation_guest_full_name": "Real Guest",
   "reservation_unit_name": "Rustic Star Retreat",
-  "reservation_check_in_date": "Thurs Jul 06, 4pm",
-  "reservation_check_out_date": "Sun Jul 10, 11am",
+  "reservation_check_in_date": "Thurs Jul 6, 4:00 pm",
+  "reservation_check_out_date": "Sun Jul 10, 11:00 am",
   "address_line_one": "89200 E. Little Trail",
   "address_line_two": "Government Camp, OR 97028",
   "city_name": "Lempus",
-  "four_box": [
-    {
-      "name": "Rustic Star Retreat",
-      "desc": "Very nice place, no bats.",
-      "image": "https://vacasa-units.imgix.net/1217056.jpg",
-      "utm": "&utm_campaign=emaildev&utm_source=emaildev",
-      "url": "https://www.vacasa.com/unit.php?UnitID=19769"
-    },
-    {
-      "name": "The Fairest View",
-      "desc": "Very nice place, no bats.",
-      "image": "https://vacasa-units.imgix.net/1872916.jpg",
-      "utm": "&utm_campaign=emaildev&utm_source=emaildev",
-      "url": "https://www.vacasa.com/unit.php?UnitID=25314"
-    },
-    {
-      "name": "The Great Escape",
-      "desc": "Very nice place, no bats.",
-      "image": "https://vacasa-units.imgix.net/163190.jpg",
-      "utm": "&utm_campaign=emaildev&utm_source=emaildev",
-      "url": "https://www.vacasa.com/unit.php?UnitID=3313"
-    },
-    {
-      "name": "Alder Hill Overlook",
-      "desc": "Very nice place, some bats.",
-      "image": "https://vacasa-units.imgix.net/1172087.jpg",
-      "utm": "&utm_campaign=emaildev&utm_source=emaildev",
-      "url": "https://www.vacasa.com/unit.php?UnitID=1907"
-    }
-  ]
+  "guests": {
+    "adults": "4",
+    "children": "2",
+    "dogs": "1"
+  }
 }
