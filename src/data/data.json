@@ -1,5 +1,5 @@
 {
-  "email_type": "marketing",
+  "email_type": "transactional",
   "rndr_template": false,
   "rndr_headline": "A filler headline to be replaced later",
   "rndr_subhead": "A filler sub-headline to be replaced later",

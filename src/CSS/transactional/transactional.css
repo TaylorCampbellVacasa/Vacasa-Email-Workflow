@@ -51,7 +51,7 @@ a {
 .lead h1,
 h2 {
   color: #2c3439;
-  font-family: "Wigrum", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -93,7 +93,7 @@ h2 {
 
 .lead p.unit-name {
   color: #2c3439;
-  font-family: "wigrum-medium", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
   font-weight: 400;
   letter-spacing: -0.2px;
@@ -109,7 +109,7 @@ h2 {
   color: #707579;
   font-size: 16px;
   line-height: 24px;
-  font-family: "wigrum-medium", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.45px;

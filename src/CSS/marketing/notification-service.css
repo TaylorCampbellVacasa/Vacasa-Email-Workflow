@@ -74,7 +74,7 @@ img {
   .column,
   .column-filler {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     float: left;
   }
 
@@ -86,17 +86,17 @@ img {
     height: 0 !important;
   }
 
-  .mobile-padding-large {
+  .mbl-pad-lg {
     padding-left: 32px !important;
     padding-right: 32px !important;
   }
 
-  .mobile-padding {
+  .mbl-pad {
     padding-left: 24px !important;
     padding-right: 24px !important;
   }
 
-  .mobile-padding-small {
+  .mbl-pad-sm {
     padding-left: 8px !important;
     padding-right: 8px !important;
   }
@@ -112,7 +112,7 @@ img {
     margin-top: 16px !important;
   }
 
-  .search.mobile-padding {
+  .search.mbl-pad {
     padding: 16px 24px !important;
   }
 

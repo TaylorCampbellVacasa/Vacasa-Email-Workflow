@@ -9,12 +9,14 @@ const styleInject = require("gulp-style-inject");
 const htmlmin = require("gulp-htmlmin");
 const size = require("gulp-size");
 const replace = require("gulp-string-replace");
+const remove = require("gulp-email-remove-unused-css");
 
-function CSS() {
+function CSS(cb) {
   return gulp
     .src("temp/*.html")
     .pipe(styleInject())
     .pipe(gulp.dest("./temp"));
+  cb();
 }
 
 function heml(cb) {
@@ -58,6 +60,9 @@ function handlebars(cb) {
       batch: [
         "./src/partials",
         "./src/partials/marketing",
+        "./src/partials/marketing/headers",
+        "./src/partials/marketing/hero",
+        "./src/partials/marketing/buttons",
         "./src/partials/transactional"
       ],
       helpers: {
@@ -99,7 +104,7 @@ function watch() {
   gulp.watch("src/**/*.*", gulp.series(handlebars, CSS, heml, reload));
 }
 
-function minify() {
+function minify(cb) {
   return gulp
     .src("dist/index.html")
     .pipe(
@@ -108,6 +113,27 @@ function minify() {
       })
     )
     .pipe(gulp.dest("dist/"));
+  cd();
+}
+
+function removeCSS(cb) {
+  return gulp
+    .src("dist/index.html")
+    .pipe(
+      remove({
+        whitelist: [
+          ".ExternalClass",
+          ".ReadMsgBody",
+          ".yshortcuts",
+          ".Mso*",
+          ".maxwidth-apple-mail-fix",
+          "#outlook",
+          ".module-*"
+        ]
+      })
+    )
+    .pipe(gulp.dest("dist/"));
+  cb();
 }
 
 function fileSize() {
@@ -171,6 +197,14 @@ function rawRenderDesignPartials() {
     .pipe(gulp.dest("src/data/"));
 }
 
+function fixInlineAll(cb) {
+  return gulp
+    .src(["dist/index.html"])
+    .pipe(replace(/\* {/, "h1, h2, h3, p, span, a {"))
+    .pipe(gulp.dest("dist/"));
+  cb();
+}
+
 exports.template = gulp.series(
   rawOnEmail,
   rawOnPartials,
@@ -183,6 +217,19 @@ exports.design = gulp.series(
   rawRenderDesignPartials
 );
 
-exports.build = gulp.series(handlebars, CSS, heml, minify, fileSize);
+exports.build = gulp.series(
+  handlebars,
+  CSS,
+  heml,
+  removeCSS,
+  fixInlineAll,
+  minify,
+  fileSize
+);
+exports.mini = gulp.series(minify, fileSize);
+exports.cull = gulp.series(removeCSS, fileSize);
+exports.smol_fix = gulp.series(fixInlineAll, fileSize);
+
+exports.oldBuild = gulp.series(handlebars, CSS, heml, minify, fileSize);
 
 exports.develop = gulp.series(handlebars, CSS, heml, server, watch);
